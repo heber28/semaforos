@@ -1,0 +1,157 @@
+<%= form_with(model: servico, local: true) do |form| %>
+  <% if servico.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(servico.errors.count, "error") %> prohibited this servico from being saved:</h2>
+
+      <ul>
+        <% servico.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :data %>
+    <%= form.date_select :data %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lampada_127x100_vermelho %>
+    <%= form.number_field :lampada_127x100_vermelho %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lampada_127x100_amarelo %>
+    <%= form.number_field :lampada_127x100_amarelo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lampada_127x100_verde %>
+    <%= form.number_field :lampada_127x100_verde %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lampada_220x100_vermelho %>
+    <%= form.number_field :lampada_220x100_vermelho %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lampada_220x100_amarelo %>
+    <%= form.number_field :lampada_220x100_amarelo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lampada_220x100_verde %>
+    <%= form.number_field :lampada_220x100_verde %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lente_vermelho %>
+    <%= form.number_field :lente_vermelho %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lente_amarelo %>
+    <%= form.number_field :lente_amarelo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :lente_verde %>
+    <%= form.number_field :lente_verde %>
+  </div>
+
+  <div class="field">
+    <%= form.label :servico_executado %>
+    <%= form.text_area :servico_executado, cols: "80", rows: "4" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :numero_os %>
+    <%= form.text_field :numero_os %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hora_inicial %>
+    <%= form.time_select :hora_inicial %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hora_final %>
+    <%= form.time_select :hora_final %>
+  </div>
+
+  <div class="field">
+    <%= form.label :controlador_brascontrol %>
+    <%= form.check_box :controlador_brascontrol %>
+  </div>
+
+  <div class="field">
+    <%= form.label :controlador_mecanico %>
+    <%= form.check_box :controlador_mecanico %>
+  </div>
+
+  <div class="field">
+    <%= form.label :controlador_tesc %>
+    <%= form.check_box :controlador_tesc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :controlador_dataprom %>
+    <%= form.check_box :controlador_dataprom %>
+  </div>
+
+  <div class="field">
+    <%= form.label :controlador_digicon %>
+    <%= form.check_box :controlador_digicon %>
+  </div>
+
+  <div class="field">
+    <%= form.label :porta_foco_t %>
+    <%= form.check_box :porta_foco_t %>
+  </div>
+
+  <div class="field">
+    <%= form.label :porta_foco_g %>
+    <%= form.check_box :porta_foco_g %>
+  </div>
+
+  <div class="field">
+    <%= form.label :porta_foco_pd %>
+    <%= form.check_box :porta_foco_pd %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ld %>
+    <%= form.check_box :ld %>
+  </div>
+
+  <div class="field">
+    <%= form.label :le %>
+    <%= form.check_box :le %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cruzamento %>
+    <%= form.text_field :cruzamento, size: 70 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sentido %>
+    <%= form.text_field :sentido, size: 50 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :executores_do_servico %>
+    <%= form.text_field :executores_do_servico, size: 70 %>
+  </div>
+
+  <div class="field">
+    <%= form.label :supervisor %>
+    <%= form.text_field :supervisor, size: 70 %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

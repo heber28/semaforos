@@ -1,0 +1,81 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Servicos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Data</th>
+      <th>Lampada 127x100 vermelho</th>
+      <th>Lampada 127x100 amarelo</th>
+      <th>Lampada 127x100 verde</th>
+      <th>Lampada 220x100 vermelho</th>
+      <th>Lampada 220x100 amarelo</th>
+      <th>Lampada 220x100 verde</th>
+      <th>Lente vermelho</th>
+      <th>Lente amarelo</th>
+      <th>Lente verde</th>
+      <th>Servico executado</th>
+      <th>Numero os</th>
+      <th>Hora inicial</th>
+      <th>Hora final</th>
+      <th>Controlador brascontrol</th>
+      <th>Controlador mecanico</th>
+      <th>Controlador tesc</th>
+      <th>Controlador dataprom</th>
+      <th>Controlador digicon</th>
+      <th>Porta foco t</th>
+      <th>Porta foco g</th>
+      <th>Porta foco pd</th>
+      <th>Ld</th>
+      <th>Le</th>
+      <th>Cruzamento</th>
+      <th>Sentido</th>
+      <th>Executores do servico</th>
+      <th>Supervisor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @servicos.each do |servico| %>
+      <tr>
+        <td><%= servico.data %></td>
+        <td><%= servico.lampada_127x100_vermelho %></td>
+        <td><%= servico.lampada_127x100_amarelo %></td>
+        <td><%= servico.lampada_127x100_verde %></td>
+        <td><%= servico.lampada_220x100_vermelho %></td>
+        <td><%= servico.lampada_220x100_amarelo %></td>
+        <td><%= servico.lampada_220x100_verde %></td>
+        <td><%= servico.lente_vermelho %></td>
+        <td><%= servico.lente_amarelo %></td>
+        <td><%= servico.lente_verde %></td>
+        <td><%= servico.servico_executado %></td>
+        <td><%= servico.numero_os %></td>
+        <td><%= servico.hora_inicial %></td>
+        <td><%= servico.hora_final %></td>
+        <td><%= servico.controlador_brascontrol %></td>
+        <td><%= servico.controlador_mecanico %></td>
+        <td><%= servico.controlador_tesc %></td>
+        <td><%= servico.controlador_dataprom %></td>
+        <td><%= servico.controlador_digicon %></td>
+        <td><%= servico.porta_foco_t %></td>
+        <td><%= servico.porta_foco_g %></td>
+        <td><%= servico.porta_foco_pd %></td>
+        <td><%= servico.ld %></td>
+        <td><%= servico.le %></td>
+        <td><%= servico.cruzamento %></td>
+        <td><%= servico.sentido %></td>
+        <td><%= servico.executores_do_servico %></td>
+        <td><%= servico.supervisor %></td>
+        <td><%= link_to 'Show', servico %></td>
+        <td><%= link_to 'Edit', edit_servico_path(servico) %></td>
+        <td><%= link_to 'Destroy', servico, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Servico', new_servico_path %>

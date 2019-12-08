@@ -1,0 +1,61 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  data: 2019-12-08
+  lampada_127x100_vermelho: 1
+  lampada_127x100_amarelo: 1
+  lampada_127x100_verde: 1
+  lampada_220x100_vermelho: 1
+  lampada_220x100_amarelo: 1
+  lampada_220x100_verde: 1
+  lente_vermelho: 1
+  lente_amarelo: 1
+  lente_verde: 1
+  servico_executado: MyText
+  numero_os: MyString
+  hora_inicial: 2019-12-08 07:42:34
+  hora_final: 2019-12-08 07:42:34
+  controlador_brascontrol: false
+  controlador_mecanico: false
+  controlador_tesc: false
+  controlador_dataprom: false
+  controlador_digicon: false
+  porta_foco_t: false
+  porta_foco_g: false
+  porta_foco_pd: false
+  ld: false
+  le: false
+  cruzamento: MyString
+  sentido: MyString
+  executores_do_servico: MyString
+  supervisor: MyString
+
+two:
+  data: 2019-12-08
+  lampada_127x100_vermelho: 1
+  lampada_127x100_amarelo: 1
+  lampada_127x100_verde: 1
+  lampada_220x100_vermelho: 1
+  lampada_220x100_amarelo: 1
+  lampada_220x100_verde: 1
+  lente_vermelho: 1
+  lente_amarelo: 1
+  lente_verde: 1
+  servico_executado: MyText
+  numero_os: MyString
+  hora_inicial: 2019-12-08 07:42:34
+  hora_final: 2019-12-08 07:42:34
+  controlador_brascontrol: false
+  controlador_mecanico: false
+  controlador_tesc: false
+  controlador_dataprom: false
+  controlador_digicon: false
+  porta_foco_t: false
+  porta_foco_g: false
+  porta_foco_pd: false
+  ld: false
+  le: false
+  cruzamento: MyString
+  sentido: MyString
+  executores_do_servico: MyString
+  supervisor: MyString
